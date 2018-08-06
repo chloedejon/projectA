@@ -1,0 +1,25 @@
+
+.container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: black; 
+}
+
+.home-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-style: oblique;
+}
+
+.home-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 90vh;
+    max-height: 900px;
+}

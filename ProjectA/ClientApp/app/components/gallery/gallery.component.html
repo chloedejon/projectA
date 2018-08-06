@@ -1,0 +1,21 @@
+<div class="modal-flex">
+    <div class="modal fade" id="selectedImageModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img class="selected-image" src="{{selectedImage.url}}">
+                    <div class="caption">
+                        <p>{{selectedImage.title}}</p>
+                        <p>{{selectedImage.caption}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul id="thumbnailsList" class="image-collage">
+    <li *ngFor="let image of datasource">
+        <img class="thumbnail" src="{{image.url}}" data-toggle="modal" data-target="#selectedImageModal" (click)=setSelectedImage(image)>
+    </li>
+</ul>

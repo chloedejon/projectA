@@ -1,0 +1,82 @@
+li .glyphicon {
+    margin-right: 10px;
+}
+
+/* Keep the nav menu independent of scrolling and on top of other items */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.navbar {
+    border-radius: 0px;
+    border-width: 0px;
+    background-color: rgb(62, 62, 62);    
+}
+
+.navbar > .container-fluid .navbar-brand {
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 50px;
+    padding: 0px;
+    color: white;
+}
+.navbar > .container-fluid .brand {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navbar-nav > li > a {
+    border-radius: 0px;
+    color: gray;
+}
+.nav > li > a:hover {
+    background-color: rgb(62, 62, 62);
+    border-radius: 0px;
+    color: white;
+}
+.nav > li > a:focus {
+    background-color: rgb(62, 62, 62);
+    border-radius: 0px;
+    color: white;
+}
+.nav-active {
+    background-color: rgb(62, 62, 62);
+    border-radius: 0px;
+    color: white !important;
+}
+.navbar-header {
+    height: 50px;
+    float: left;
+}
+.navbar-body {
+    height: 50px;
+    float: left;
+}
+.navbar-collapse {
+    float: none;
+    border-top: 1px solid #444;
+    padding: 0px;
+}
+.navbar ul {
+    float: none;
+}
+.navbar li {
+    float: left;
+    font-size: 15px;
+    line-height: 50px !important;
+    height: 50px;
+}
+.navbar-nav > li > a {
+    line-height: 50px !important;
+    height: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.navbar-nav {
+    height: 50px;
+    margin: 0px;
+}
