@@ -21,11 +21,38 @@ li {
 }
 .thumbnail {
     max-width: 100%;
-    margin: 12px;
+    padding: 0px;
+    border-radius: 0px;
+    margin-bottom: 12px;
+    border: none;
 }
+.thumbnail:hover {
+    cursor: pointer;
+}
+.box {
+    position: relative;
+}
+.btn-back, .btn-forward{
+    text-align:center;
+    opacity:0.9;
+    background-color:black;
+    padding:10px;
+    color:white;
+    cursor:pointer;
+}
+.btn-back {
+    position: absolute;
+    left: 0px;
+    top: 30vh;
+}
+.btn-forward {
+    position: absolute;
+    right: 0px;
+    top: 30vh;
+ }
 .selected-image {
     max-width: 100%;
-    max-height: 70vh;
+    max-height: 80vh;
 }
 .caption {
     width: auto;

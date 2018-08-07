@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 export interface Image {
   url: string,
@@ -11,20 +11,27 @@ export interface Image {
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.css']
 })
-export class GalleryComponent { 
- 
-   @Input() datasource: Array<Image> = [];
-   selectedImage: Image;
+export class GalleryComponent {
 
-   constructor() {
-     this.selectedImage = {
-       url: "init",
-       title: "init",
-       caption: "init"
-     }
-   }
- 
-   setSelectedImage(image: Image){
-      this.selectedImage = image;
-   }
+  @Input() datasource: Array<Image> = [];
+  selectedImage: Image;
+
+  constructor() {
+    this.selectedImage = {
+      url: "init",
+      title: "init",
+      caption: "init"
+    }
+  }
+
+  setSelectedImage(image: Image) {
+    this.selectedImage = image;
+  }
+
+  navigate(forward: boolean) {
+    var index = this.datasource.indexOf(this.selectedImage) + (forward ? 1 : -1);
+    if (index >= 0 && index < this.datasource.length) {
+      this.selectedImage = this.datasource[index];
+    }
+  }
 }
