@@ -20,7 +20,7 @@ li {
     column-gap: 12px;
 }
 .thumbnail {
-    max-width: 100%;
+    width: 100%;
     padding: 0px;
     border-radius: 0px;
     margin-bottom: 12px;

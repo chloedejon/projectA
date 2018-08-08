@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 
 export interface Image {
   url: string,
@@ -12,6 +12,16 @@ export interface Image {
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent {
+
+  @HostListener("window:keydown", ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === "ArrowLeft") {
+      this.navigate(false);
+    }
+    else if (event.key === "ArrowRight") {
+      this.navigate(true);
+    }
+  }
 
   @Input() datasource: Array<Image> = [];
   selectedImage: Image;
