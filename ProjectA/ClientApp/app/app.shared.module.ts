@@ -11,6 +11,8 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
     declarations: [
@@ -20,7 +22,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
         FetchDataComponent,
         HomeComponent,
         PortfolioComponent,
-        GalleryComponent
+        GalleryComponent,
+        AboutComponent,
+        ContactComponent
     ],
     imports: [
         CommonModule,
@@ -29,9 +33,11 @@ import { GalleryComponent } from './components/gallery/gallery.component';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            { path: 'portfolio', component: PortfolioComponent },
+            { path: 'about', component: AboutComponent },
+            { path: 'contact', component: ContactComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
-            { path: 'portfolio', component: PortfolioComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]
