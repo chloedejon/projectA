@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +25,13 @@ namespace ProjectA.Controllers
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             });
+        }
+
+        [HttpGet("[action]")]
+        public IEnumerable<string> Images()
+        {
+            //JsonConvert.DeserializeObject<ImageMetaData>(System.IO.File.ReadAllText("imagedata.json"));
+            return Directory.EnumerateFiles("wwwroot/images").Select(path => Path.GetFileName(path));
         }
 
         public class WeatherForecast
