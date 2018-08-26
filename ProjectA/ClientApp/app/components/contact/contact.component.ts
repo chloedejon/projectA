@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
     styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
+    url = "Images/anton.jpg";
 }
