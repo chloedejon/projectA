@@ -30,7 +30,24 @@ li {
     cursor: pointer;
 }
 .box {
+    display: inline-block;
     position: relative;
+}
+.leftside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
+}
+.rightside {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    cursor: pointer;
 }
 .btn-back, .btn-forward{
     text-align:center;

@@ -4,13 +4,15 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="box">
-                        <img class="selected-image" src="{{selectedImage.url}}">
+                        <div class="leftside" (click)="navigate(false)"></div>
+                        <div class="rightside" (click)="navigate(true)"></div>
                         <div class="btn-back" (click)="navigate(false)">
                             &lt;
                         </div>
                         <div class="btn-forward" (click)="navigate(true)" >
                             &gt;
                         </div>
+                        <img class="selected-image" src="{{selectedImage.url}}" usemap="#a">
                     </div>
                     <div class="caption">
                         <p>{{selectedImage.title}}</p>
