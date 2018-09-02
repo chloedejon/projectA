@@ -27,13 +27,6 @@ namespace ProjectA.Controllers
             });
         }
 
-        [HttpGet("[action]")]
-        public IEnumerable<string> Images()
-        {
-            //JsonConvert.DeserializeObject<ImageMetaData>(System.IO.File.ReadAllText("imagedata.json"));
-            return Directory.EnumerateFiles("wwwroot/images").Select(path => Path.GetFileName(path));
-        }
-
         public class WeatherForecast
         {
             public string DateFormatted { get; set; }

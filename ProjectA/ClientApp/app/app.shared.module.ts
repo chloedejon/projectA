@@ -13,6 +13,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ImagesService } from './services/images.service';
 
 @NgModule({
     declarations: [
@@ -39,7 +40,11 @@ import { ContactComponent } from './components/contact/contact.component';
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
-        ])
+        ]),
+        
+    ],
+    providers: [
+        ImagesService
     ]
 })
 export class AppModuleShared {
