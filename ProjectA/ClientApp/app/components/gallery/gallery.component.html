@@ -4,12 +4,12 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="box">
-                        <div class="leftside" (click)="navigate(false)"></div>
-                        <div class="rightside" (click)="navigate(true)"></div>
-                        <div class="btn-back" (click)="navigate(false)">
+                        <div *ngIf="this.datasource.indexOf(this.selectedImage) != 0" class="leftside" (click)="navigate(false)"></div>
+                        <div *ngIf="this.datasource.indexOf(this.selectedImage) != datasource.length-1" class="rightside" (click)="navigate(true)"></div>
+                        <div *ngIf="this.datasource.indexOf(this.selectedImage) != 0" class="btn-back" (click)="navigate(false)">
                             &lt;
                         </div>
-                        <div class="btn-forward" (click)="navigate(true)" >
+                        <div *ngIf="this.datasource.indexOf(this.selectedImage) != datasource.length-1" class="btn-forward" (click)="navigate(true)" >
                             &gt;
                         </div>
                         <img class="selected-image" src="{{selectedImage.url}}" usemap="#a">
