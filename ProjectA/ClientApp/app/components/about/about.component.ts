@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
     url = "Images/anton.jpg";
-    description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    description = "I am an illustrator and artist living in Gothenburg, Sweden. Drawing and illustrating, which later expanded into digital art, has always been my main interest. As of now it is not my full time job, which I would like to do something about. Currently I am looking for work opportunities, both in illustration and concept art or other forms of digital painting. If you are interested in my work, please see";
 }

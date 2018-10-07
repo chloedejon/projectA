@@ -13,4 +13,5 @@ h1 {
     font-style: italic;
     border-bottom-style: solid;
     border-bottom-color: grey;
+    margin-bottom: 30px;
 }
