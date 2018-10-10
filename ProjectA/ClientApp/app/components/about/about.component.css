@@ -7,12 +7,12 @@
 .image-column {
     float: left;
     width: 30%;
+    min-width: 100px;
 }
 
 .text-column {
     float: left;
     width: 70%;
-    min-width: 300px;
 }
 
 /* Clear floats after the columns */
@@ -46,8 +46,14 @@ h1 {
     margin-bottom: 10px;
     margin-left: 0;
     width: 80%;
-    min-width: 100px;
+    
 }
 .text-about {
     margin-top: 30px;
 }
+
+@media screen and (max-width: 800px) {
+    .text-column {
+        width: auto;
+    }
+  }
