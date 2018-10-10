@@ -52,7 +52,7 @@ h1 {
     margin-top: 30px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-device-width: 800px) {
     .text-column {
         width: auto;
     }
